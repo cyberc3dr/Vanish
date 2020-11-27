@@ -1,0 +1,12 @@
+name: Vanish
+main: ru.sliva.vanish.MainClass
+version: 1.0
+description: Простой ваниш.
+api-version: 1.13
+author: CJluBaToP229
+commands:
+  vanish:
+    description: 'Включает невидимость игроку.'
+    usage: '/vanish (игрок)'
+    aliases: [v, invise]
+    permission: 'main.vanish'
