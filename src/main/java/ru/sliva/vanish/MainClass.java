@@ -17,8 +17,6 @@ import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
-import org.bukkit.potion.PotionEffect;
-import org.bukkit.potion.PotionEffectType;
 
 import com.destroystokyo.paper.event.server.PaperServerListPingEvent;
 import com.destroystokyo.paper.profile.PlayerProfile;
@@ -47,12 +45,10 @@ public class MainClass extends JavaPlugin implements Runnable, Listener{
 				Player p = (Player) sender;
 				if(vanishList.contains(p.getUniqueId())) {
 					plMgr.callEvent(new PlayerJoinEvent(p, p.getDisplayName() + "§ejoined the game."));
-					p.removePotionEffect(PotionEffectType.INVISIBILITY);
 					vanishList.remove(p.getUniqueId());
 					p.sendMessage("§aYou are now in vanish mode.");
 				} else {
 					plMgr.callEvent(new PlayerQuitEvent(p, p.getDisplayName() + "§eleft the game."));
-					p.addPotionEffect(new PotionEffect(PotionEffectType.INVISIBILITY, 100000, 127));
 					vanishList.add(p.getUniqueId());
 					p.sendMessage("§cYou are no longer in vanish mode.");
 				}
