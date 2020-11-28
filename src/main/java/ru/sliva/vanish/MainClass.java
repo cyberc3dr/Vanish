@@ -36,6 +36,10 @@ public class MainClass extends JavaPlugin implements Runnable, Listener{
 	
 	@Override
 	public void onDisable() {
+		if(Bukkit.getScheduler().isCurrentlyRunning(updateTask)) {
+			Bukkit.getScheduler().cancelTask(updateTask);
+		}
+		vanishList.clear();
 	}
 	
 	@Override
