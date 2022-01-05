@@ -110,7 +110,7 @@ public class Vanish extends JavaPlugin implements Runnable, Listener {
         }
         Player p = e.getPlayer();
         if (vanishList.contains(p.getUniqueId())) {
-            e.setJoinMessage(null);
+            e.joinMessage(null);
         }
     }
 
@@ -118,7 +118,7 @@ public class Vanish extends JavaPlugin implements Runnable, Listener {
     public void quit(PlayerQuitEvent e) {
         Player p = e.getPlayer();
         if (vanishList.contains(p.getUniqueId())) {
-            e.setQuitMessage(null);
+            e.quitMessage(null);
         }
     }
 }
