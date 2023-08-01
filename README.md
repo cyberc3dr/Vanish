@@ -1,6 +1,2 @@
-## TODO: rewrite to kotlin
-
 # Vanish
-Плагин который делает тебя невидимым, совместим с плагинами на MOTD, и сообщение входа.
-
-> Работает только на PaperMC ядрах/форках
+The number one plugin for invisibility

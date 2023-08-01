@@ -1,7 +1,7 @@
-name: "${project.name}"
+name: "${name}"
 main: ru.sliva.vanish.Vanish
-version: "${project.version}"
-description: "${project.description}"
+version: "${version}"
+description: "${description}"
 api-version: 1.19
 author: sliva_ru
 commands:
