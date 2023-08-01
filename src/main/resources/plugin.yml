@@ -1,16 +1,12 @@
-name: Vanish
+name: "${project.name}"
 main: ru.sliva.vanish.Vanish
-version: 1.0
-description: Простой ваниш.
-api-version: 1.16
+version: "${project.version}"
+description: "${project.description}"
+api-version: 1.19
 author: sliva_ru
 commands:
   vanish:
-    description: 'Включает невидимость игроку.'
-    usage: '/vanish (игрок)'
-    aliases: [v, invise]
-    permission: 'main.vanish'
-  tp:
-    description: 'Телепортирует данного игрока или себя к другому игроку или координатам'
-    usage: '/tp [игрок] <цель> и/или <x> <y> <z>'
-    aliases: [teleport]
+    description: 'Main command.'
+    usage: '/vanish'
+    aliases: [v]
+    permission: 'vanish.command']
