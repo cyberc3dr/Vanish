@@ -11,4 +11,4 @@ commands:
     description: 'Main command.'
     usage: '/vanish'
     aliases: [v]
-    permission: 'vanish.command']
+    permission: 'vanish.command'
