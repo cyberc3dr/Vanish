@@ -26,9 +26,5 @@ tasks.withType<JavaCompile>() {
 }
 
 tasks.withType<ProcessResources>() {
-    expand(
-        "name" to project.name,
-        "version" to project.version,
-        "description" to project.description
-    )
+    expand(project.properties)
 }
